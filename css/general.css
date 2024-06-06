@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
@@ -18,7 +18,10 @@ Medium: 1.2
 Paragraph default: 1.6
 
 - Letter spacing
+35px
+30px
 40px
+95px
 
 --- 02 COLORS
 
@@ -66,51 +69,111 @@ body {
   line-height: 1;
   color: #ffffff;
   font-weight: 400;
-  position: relative;
+  overflow-x: hidden;
 }
-
 
 /* Common Class */
-.container{
- 
- padding: 0;
- margin: 0;
- height: 100vh;
- width: 100vw ;
+.container {
+  padding-left: 9rem;
+  height: 100%;
+  width: 100%;
 }
 
-.realtive{
+.realtive {
   position: relative;
 }
 
-.absolute{
+.absolute {
   position: absolute;
 }
 
-
+.section {
+  padding: 11.7rem 6rem 2rem;
+  background-color: #1a1925;
+}
 
 /* Display flex */
-.flex{
+.flex {
   display: flex;
 }
 
-.flex-row{
+.flex-row {
   flex-direction: row;
 }
 
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
 
-.justify-between{
-justify-content: space-between;
+.justify-between {
+  justify-content: space-between;
 }
 
-.justify-around{
-justify-content: space-around;
+.justify-around {
+  justify-content: space-around;
 }
 
 /* PADDING */
-.pad3{
-padding: 3rem;
+.pad3 {
+  padding: 3rem;
+}
+
+/* PARAGRAPH */
+.primary-paragraph {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: normal;
+  font-weight: 500;
+  /* text-align: center; */
+}
+
+.secondary-paragraph {
+  font-size: 22px;
+  line-height: 35px;
+  text-align: start;
+  letter-spacing: normal;
+  color: #c5945c;
+}
+
+.tertary-paragraph {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: start;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+/* HEADING */
+.primary-heading {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: normal;
+  font-weight: 500;
+  color: #c5945c;
+  /* text-align: center; */
+}
+
+.secondary-heading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: normal;
+  font-weight: 500;
+  color: #c5945c;
+  /* text-align: center; */
+}
+
+/* MARGIN */
+
+.margin-b5 {
+  margin-bottom: 4.8rem;
+}
+
+.margin-semi {
+  margin-bottom: 2.4rem;
+}
+.margin-b2 {
+  margin-bottom: 1.6rem;
 }

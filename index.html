@@ -8,34 +8,169 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container flex">
-      <header class="header">
-        <div class="header-container realtive">
-          <!-- <div class="menu pad3">
-            <div class="close-menu">
-              <img src="./public/icons/x-bold.svg" alt="" />
+    <header class="header">
+      <div class="header-container realtive">
+        <!-- <div class="menu pad3">
+          <div class="close-menu">
+            <img src="./public/icons/x-bold.svg" alt="" />
+          </div>
+          <div class="menu-items pad3">
+            <ul class="items">
+              <li>Home</li>
+              <li>Services</li>
+              <li>Portfolio</li>
+              <li>Resume</li>
+              <li>Skills</li>
+              <li>Contact</li>
+              <li>Blog</li>
+            </ul> 
+          </div>
+        </div> -->
+        <div class="menu-icon flex justify-between flex-column">
+          <div class="toogle toogle1"></div>
+          <div class="toogle toogle2"></div>
+          <div class="toogle"></div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <div class="hero-section">
+          <div class="video-container">
+            <video src="./public/video/program.mp4" autoplay muted loop></video>
+          </div>
+          <div class="overlay"></div>
+
+          <div class="hero-info absolute">
+            <div class="hero-img">
+              <img src="./public/img/rocky.png" alt="" />
             </div>
-            <div class="menu-items pad3">
-              <ul class="items">
-                <li>Home</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Resume</li>
-                <li>Skills</li>
-                <li>Contact</li>
-                <li>Blog</li>
-              </ul> 
-            </div>
-          </div> -->
-          <div class="menu-icon flex justify-between flex-column">
-            <div class="toogle toogle1"></div>
-            <div class="toogle toogle2"></div>
-            <div class="toogle"></div>
+            <h1>Rocky Mor</h1>
+            <p class="hero-para primary-paragraph">CV/Portfolio</p>
           </div>
         </div>
-      </header>
-      <main>
-        <div class="hero-section"></div>
+        <div class="service-section section">
+          <div>
+            <p class="primary-heading margin-b5">Services</p>
+            <p class="secondary-paragraph margin-b2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              tristique placerat in massa consectetur quisque nunc fames.
+            </p>
+            <p class="tertary-paragraph margin-b2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              tristique placerat in massa consectetur quisque. Nunc ac fames
+              lectus in libero aliquet.
+            </p>
+            <p class="tertary-paragraph margin-b5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              tristique placerat in massa consectetur quisque. Nunc ac fames
+              lectus in libero aliquet. Faucibus sed tristique fames sed aliquet
+              ultricies eget viverra arcu. Vitae faucibus diam consequat
+              maecenas. Turpis metus sit diam purus leo in varius ac quam. Nunc
+              amet tristique volutpat adipiscing vulputate phasellus. Volutpat
+              faucibus praesent ac lobortis aliquam dolor. Eget enim aliquam
+              euismod mauris in vitae viverra blandit lectus. Diam feugiat
+              mattis metus, parturient ipsum id nibh tortor tincidunt. Quam
+              facilisi nunc faucibus at porttitor.
+            </p>
+          </div>
+          <div class="service-btns">
+            <button class="primary-btn-service">Download CV</button>
+            <button class="primary-btn-service">Check my Portfolio</button>
+          </div>
+          <div class="service-showcase">
+            <div class="service-grid">
+              <img src="./public/service_img/design.png" alt="" />
+              <p class="secondary-heading margin-semi">Design</p>
+              <p class="tertary-paragraph margin-b2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                tristique placerat in massa consectetur quisque. Nunc ac fames
+                lectus in libero aliquet.
+              </p>
+            </div>
+            <div class="service-grid">
+              <img src="./public/service_img/develop.png" alt="" />
+              <p class="secondary-heading margin-semi">Develop</p>
+              <p class="tertary-paragraph margin-b2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                tristique placerat in massa consectetur quisque. Nunc ac fames
+                lectus in libero aliquet.
+              </p>
+            </div>
+            <div class="service-grid">
+              <img src="./public/service_img/write.png" alt="" />
+              <p class="secondary-heading margin-semi">Write</p>
+              <p class="tertary-paragraph margin-b2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                tristique placerat in massa consectetur quisque. Nunc ac fames
+                lectus in libero aliquet.
+              </p>
+            </div>
+            <div class="service-grid">
+              <img src="./public/service_img/promote.png" alt="" />
+              <p class="secondary-heading margin-semi">Promote</p>
+              <p class="tertary-paragraph margin-b2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                tristique placerat in massa consectetur quisque. Nunc ac fames
+                lectus in libero aliquet.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-grid">
+              <img src="./public/project_img/pixelGoat.png" alt="" />
+              <div class="project-item-overlay">
+                 <p class="primary-heading project-name">PixelGoat Clone</p>
+                 <a class="project-link" href="https://pixelgoatproj.netlify.app/">- Go Live</a>
+              </div>
+            </div>
+            <div class="project-grid">
+              <img src="./public/project_img/translater.png" alt="" />
+              <div class="project-item-overlay">
+                 <p class="primary-heading project-name">Google Translator Clone</p>
+                 <a class="project-link" href="https://app.netlify.com/sites/lively-pixie-6a7407/overview">- Go Live</a>
+              </div>
+            </div>
+            <div class="project-grid">
+              <img src="./public/project_img/omnifood.png" alt="" />
+              <div class="project-item-overlay">
+                 <p class="primary-heading project-name">Omnifood Resturant Project</p>
+                 <Small>Jonas.io</Small>
+                 <a class="project-link" href="https://enchanting-gecko-097270.netlify.app/">- Go Live</a>
+              </div>
+            </div>
+            <div class="project-grid">
+              <img src="./public/project_img/weather.png" alt="" />
+              <div class="project-item-overlay">
+                 <p class="primary-heading project-name">Weather Forcast</p>
+                 <Small>Jonas.io</Small>
+                 <a class="project-link" href="https://merry-piroshki-4f3bf7.netlify.app/">- Go Live</a>
+              </div>
+            </div>
+            <div class="project-grid">
+              <img src="./public/project_img/wallClock.png" alt="" />
+              <div class="project-item-overlay">
+                 <p class="primary-heading project-name">RealTime Wall Clock</p>
+                 <Small>Jonas.io</Small>
+                 <a class="project-link" href="https://musical-druid-8f59ac.netlify.app/">- Go Live</a>
+              </div>
+            </div>
+            <div class="project-grid">
+              <img src="./public/project_img/Totodolist.png" alt="" />
+              <div class="project-item-overlay">
+                 <p class="primary-heading project-name">Todo List</p>
+                 <Small>Jonas.io</Small>
+                 <a class="project-link" href="https://todo-task-webpage.netlify.app/">- Go Live</a>
+              </div>
+            </div>
+           
+           
+            
+          </div>
+        </div>
+        <div class="experience-section section">
+          <p class="primary-heading margin-b5">Experience</p>
+        </div>
       </main>
     </div>
   </body>
