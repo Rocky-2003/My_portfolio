@@ -17,7 +17,6 @@
 .menu-icon {
   width: 3rem;
   height: 2rem;
-  
 }
 
 .toogle {
@@ -178,7 +177,6 @@ h1 {
 
 .service-grid {
   padding: 3rem;
-  
 }
 
 .project {
@@ -209,7 +207,7 @@ h1 {
   flex-direction: column;
   align-items: start;
   justify-content: end;
-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .project-name {
@@ -224,8 +222,210 @@ transition: all 0.5s ease;
   margin-top: 1.2rem;
 }
 
-
-.project-grid:hover .project-item-overlay{
+.project-grid:hover .project-item-overlay {
   transform: translateX(0px);
-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* Experience Section */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 5fr 5fr 70fr;
+}
+
+
+.exp-year{
+  color: #c5945c !important;
+}
+
+.exp-circle{
+  height: 2.8rem;
+  position: relative;
+  width: 2.8rem;
+  border: 4px solid #c5945c;
+  border-radius: 50%;
+  background: linear-gradient(to top, transparent 80%,  #c5945c 20%);
+}
+
+.exp-circle::after{
+  content: '';
+  height: 3rem;
+  width: .4rem;
+  background-color: #c5945c;
+  position: absolute;
+  bottom: -4rem;
+  left: .9rem;
+}
+
+/* Cover Section */
+.signature-img{
+  width: 100%;
+  height: 100%;
+}
+
+.signature-img img{
+  width: 18%;
+}
+
+/* Skill Section */
+
+.skill-item{
+  margin-bottom: 4rem;
+}
+
+.skill-grid{
+  display: grid;
+  grid-template-columns: 90fr 10fr;
+  gap: 4rem;
+}
+
+.skill-percentage{
+  height: 1.2rem;
+  width: 100%;
+  background-color:  #2F2D3C;
+  position: relative;
+}
+
+
+.skill-percentage::after {
+content: '';
+height: 2.4rem;
+  display: block;
+/* width: 50%; */
+background-color: #c5945c;
+position: absolute;
+top: -6px;
+}
+
+
+.skill-percentage.javascript::after{
+  width:80% ;
+}
+
+.skill-percentage.html::after{
+  width:100% ;
+}
+
+.skill-percentage.css::after{
+  width:90% ;
+}
+
+.skill-percentage.node::after{
+  width:60% ;
+}
+
+.skill-percentage.express::after{
+  width:40% ;
+}
+
+.skill-percentage.mongo::after{
+  width:30% ;
+}
+
+.skill-percentage.java::after{
+  width:70% ;
+}
+.skill-percentage.react::after{
+  width:70% ;
+}
+.skill-percentage.git::after{
+  width:80% ; 
+}
+
+
+
+/* form section */
+
+
+
+.address-container {
+    background-color: #c5945c;
+    margin-top: 4rem;
+    padding: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+address {
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+address strong{
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+address a {
+    color: #ffff;
+    /* text-decoration: none; */
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+.form-container {
+    background-color: #c5945c;
+    color: #fff;
+   
+    margin-top: 5rem;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+input, textarea {
+    margin-bottom: 6rem;
+    padding: 1px 0;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: normal;
+    border-bottom: 2px solid #ffff;
+    
+}
+
+input::placeholder, textarea::placeholder{
+  color: #ffffff;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 2rem 4rem;
+    border: 2px solid #ffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
 }
