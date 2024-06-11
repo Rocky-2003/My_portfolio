@@ -1,0 +1,10 @@
+/* In media queries we dont use rem because of conflict in some browsers so, we use em and 1rem = 1em = 16px  */
+
+/**************************/
+/* BELOW 1344PX (SMALLER DESKTOPS) 1344px/16px=84em   */
+/**************************/
+
+@media (max-width: 84em) {
+ 
+
+}

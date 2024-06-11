@@ -75,7 +75,7 @@ body {
 
 /* Common Class */
 .container {
-  padding-left: 9rem;
+ padding: 0 6rem 0 15rem;
   height: 100%;
   width: 100%;
   
@@ -95,7 +95,8 @@ main{
 }
 
 .section {
-  padding: 11.7rem 6rem 2rem;
+  /* padding: 11.7rem 6rem 2rem; */
+  padding: 9rem 0;
   background-color: #1a1925;
 }
 
