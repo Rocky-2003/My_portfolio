@@ -75,13 +75,12 @@ body {
 
 /* Common Class */
 .container {
- padding: 0 6rem 0 15rem;
+  padding: 0 6rem 0 15rem;
   height: 100%;
   width: 100%;
-  
 }
 
-main{
+main {
   padding-bottom: 9rem;
   background-color: #1a1925;
 }
@@ -95,7 +94,6 @@ main{
 }
 
 .section {
-  /* padding: 11.7rem 6rem 2rem; */
   padding: 9rem 0;
   background-color: #1a1925;
 }
@@ -186,6 +184,16 @@ main{
   margin-bottom: 1.6rem;
 }
 
-.margin-t5{
+.margin-t5 {
   margin-top: 9rem;
+}
+
+/* IMAGES */
+img.lazyload {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+img.lazyload.loaded {
+  opacity: 1;
 }

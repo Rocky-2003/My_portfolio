@@ -51,8 +51,8 @@
 .menu {
   position: absolute;
   background-color: #c5945c;
-  width: 32rem;
-  height: 100%;
+  width: 30rem;
+  height: 100vh;
   top: 0;
   left: 0;
   transform: translateX(-350px);
@@ -80,39 +80,47 @@
 
 /* HERO SECTION */
 .hero-section {
+  /* margin-left: 9rem; */
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.hero-main {
-  overflow: hidden !important;
-  height: 100%;
+.video-container {
+  height: 100rem;
+  width: 110rem;
+  /* overflow: hidden; */
 }
 
-.video-container video {
-  height: 100%;
+
+/* .video-container video{
   width: 100%;
-}
+  height: 100%;
+} */
 
 .overlay {
   position: absolute;
   border: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0px;
+  left: 0px; 
+  width: 100vw;
+  height: 100vh;
   background-color: #1a1925cb;
 }
 
 .hero-info {
   border: none;
   border: none;
-  top: 30px;
-  left: 0;
-  width: 90%;
+  /* top: 30px; */
+  left: 30px;
+  /* width: 90%; */
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +140,7 @@
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 10rem;
   line-height: 94px;
   text-align: center;
   letter-spacing: normal;
@@ -210,7 +218,7 @@ h1 {
   padding: 2.4rem;
   top: 0;
   left: 0;
-  transform: translateX(-600px);
+  transform: translateX(-620px);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -238,7 +246,7 @@ h1 {
 /* Experience Section */
 .experience-grid {
   display: grid;
-  grid-template-columns: 5fr 5fr 70fr;
+  grid-template-columns: 10fr 10fr 80fr;
 }
 
 .exp-year {
@@ -374,9 +382,8 @@ address a:hover {
 .form-container {
   background-color: #c5945c;
   color: #fff;
-
   margin-top: 5rem;
-  padding: 50px;
+  padding: 5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   width: 100%;

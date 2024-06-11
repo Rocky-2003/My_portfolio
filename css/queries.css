@@ -5,6 +5,122 @@
 /**************************/
 
 @media (max-width: 84em) {
- 
+  .hero-section {
+    height: 97vh;
+  }
+}
 
+/**************************/
+/* BELOW 1200PX (For LandScape Tablets)  */
+/**************************/
+
+@media (max-width: 74rem) {
+  html {
+    /* 9px/16px *100 = 56.20% */
+    font-size: 56%;
+  }
+  .header {
+    width: 8.5rem;
+  }
+}
+
+/**************************/
+/* BELOW 944PX (For Tablets)  */
+/**************************/
+@media (max-width: 59em) {
+  html {
+    /* 8/16*100 = 50% */
+    font-size: 50%;
+  }
+
+
+
+  .header {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 9rem;
+  }
+
+  .video-container {
+    width: 117rem;
+  }
+
+   .hero-info {
+    left: 0;
+  }
+
+  .menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    padding: 0 4.8rem;
+  }
+  .service-showcase {
+    gap: 1.8rem;
+  }
+  .service-grid {
+    padding: 1rem;
+  }
+
+  .address-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/**************************/
+/* BELOW 700PX (For smaller Tablets)  */
+/**************************/
+
+@media (max-width: 44em) {
+  h1 {
+    font-size: 8rem;
+  }
+
+  .service-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+  }
+
+  .experience-grid {
+    gap: 1rem;
+  }
+
+  .form-container {
+    padding: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 544 PX (For Phones)  */
+/**************************/
+
+@media (max-width: 34em) {
+
+    html {
+    /* 8/16*100 = 50% */
+    font-size: 44%;
+  }
+
+  .hero-info {
+    left: 0;
+  }
+
+  .service-btns button:nth-child(2){
+    margin-top: 2rem;
+  }
+
+  h1 {
+    width: 50%;
+    line-height: normal;
+    font-size: 5rem;
+  }
 }
