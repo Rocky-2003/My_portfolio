@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/general.css" />
-    <link rel="stylesheet" href="./css/queries.css" />
+    <script type="module" async src="./src/script/script.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/general.css" />
+    <link rel="stylesheet" href="./src/css/queries.css" />
     <title>Document</title>
   </head>
   <body>
@@ -13,17 +14,17 @@
       <div class="header-container realtive">
         <div class="menu pad3">
           <div class="close-menu">
-            <img src="./public/icons/x-bold.svg" alt="" />
+            <img src="./src/public/icons/x-bold.svg" alt="" />
           </div>
           <div class="menu-items pad3">
             <ul class="items">
-              <li>Home</li>
-              <li>Services</li>
-              <li>Portfolio</li>
-              <li>Resume</li>
-              <li>Skills</li>
-              <li>Contact</li>
-              <li>Blog</li>
+              <a href="#home">Home</a>
+              <a href="#services">Services</a>
+              <a href="#resume">Resume</a>
+              <a href="#projects">Projects</a>
+              <a href="#skills">Skills</a>
+              <a href="#letter">Cover Letter</a>
+              <a href="#contact">Contact</a>
             </ul>
           </div>
         </div>
@@ -34,112 +35,118 @@
         </div>
       </div>
     </header>
-    <div class="hero-section">
+    <div class="hero-section" id="home">
       <div class="video-container">
-        <video src="./public/video/program.mp4" autoplay muted loop></video>
+        <video
+          src="./src/public//video/program.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
       </div>
       <div class="overlay"></div>
 
       <div class="hero-info absolute">
         <div class="hero-img">
-          <img class="lazyload" data-src="./public/img/rocky.png" alt="" />
+          <img class="lazyload" src="./src/public/img/rocky.png" alt="" />
         </div>
         <h1>Rocky Mor</h1>
         <p class="hero-para primary-paragraph">CV/Portfolio</p>
       </div>
     </div>
     <main class="container">
-      <div class="service-section section">
+      <div class="service-section section" id="services">
         <div>
           <p class="primary-heading margin-b5">Services</p>
           <p class="secondary-paragraph margin-b2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            tristique placerat in massa consectetur quisque nunc fames.
+            <!-- Frontend Developer Proficient in Node.js, Express, and MongoDB -->
+            Frontend Developer with a bit of knowledge of backend (Node.js,
+            Express.js, MongoDB)
           </p>
-          <p class="tertary-paragraph margin-b2">
+          <!-- <p class="tertary-paragraph margin-b2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
             tristique placerat in massa consectetur quisque. Nunc ac fames
             lectus in libero aliquet.
-          </p>
+          </p> -->
           <p class="tertary-paragraph margin-b5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            tristique placerat in massa consectetur quisque. Nunc ac fames
-            lectus in libero aliquet. Faucibus sed tristique fames sed aliquet
-            ultricies eget viverra arcu. Vitae faucibus diam consequat maecenas.
-            Turpis metus sit diam purus leo in varius ac quam. Nunc amet
-            tristique volutpat adipiscing vulputate phasellus. Volutpat faucibus
-            praesent ac lobortis aliquam dolor. Eget enim aliquam euismod mauris
-            in vitae viverra blandit lectus. Diam feugiat mattis metus,
-            parturient ipsum id nibh tortor tincidunt. Quam facilisi nunc
-            faucibus at porttitor.
+            As a frontend developer, I excel in crafting dynamic and engaging
+            user interfaces, leveraging a toolkit encompassing HTML, CSS, and
+            JavaScript. With a solid grasp of Node.js, Express, and MongoDB, I
+            possess the capability to integrate backend functionalities
+            seamlessly into frontend applications. Whether it's crafting
+            responsive web designs, building interactive web applications, or
+            optimizing user experiences, I bring creativity and technical
+            expertise to every project. My proficiency extends to developing
+            full-stack applications, where I leverage my backend knowledge to
+            enhance frontend functionalities and ensure smooth data management.
           </p>
         </div>
-        <div class="service-btns">
-          <button class="primary-btn-service">Download CV</button>
+        <div class="service-btns" id="resume">
+          <button id="downloadBtn" class="primary-btn-service">
+            Download CV
+          </button>
           <button class="primary-btn-service">Check my Portfolio</button>
         </div>
         <div class="service-showcase">
           <div class="service-grid">
             <img
               class="lazyload"
-              data-src="./public/service_img/design.png"
+              src="./src/public/service_img/design.png"
               alt=""
             />
             <p class="secondary-heading margin-semi">Design</p>
             <p class="tertary-paragraph margin-b2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              tristique placerat in massa consectetur quisque. Nunc ac fames
-              lectus in libero aliquet.
+              As a frontend developer with a bit of design knowledge, I
+              specialize in creating visually appealing and user-friendly web
+              interfaces.
             </p>
           </div>
           <div class="service-grid">
             <img
               class="lazyload"
-              data-src="./public/service_img/develop.png"
+              src="./src/public/service_img/develop.png"
               alt=""
             />
             <p class="secondary-heading margin-semi">Develop</p>
             <p class="tertary-paragraph margin-b2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              tristique placerat in massa consectetur quisque. Nunc ac fames
-              lectus in libero aliquet.
+              Creative frontend developer with a passion for crafting intuitive,
+              responsive user interfaces and a knack for seamless full-stack
+              integration.
             </p>
           </div>
           <div class="service-grid">
             <img
               class="lazyload"
-              data-src="./public/service_img/write.png"
+              src="./src/public/service_img/write.png"
               alt=""
             />
             <p class="secondary-heading margin-semi">Write</p>
             <p class="tertary-paragraph margin-b2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              tristique placerat in massa consectetur quisque. Nunc ac fames
-              lectus in libero aliquet.
+              I write weekly blogs to share insights, tips, and tutorials on
+              modern web development.
             </p>
           </div>
           <div class="service-grid">
             <img
               class="lazyload"
-              data-src="./public/service_img/promote.png"
+              src="./src/public/service_img/promote.png"
               alt=""
             />
             <p class="secondary-heading margin-semi">Promote</p>
             <p class="tertary-paragraph margin-b2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-              tristique placerat in massa consectetur quisque. Nunc ac fames
-              lectus in libero aliquet.
+              I craft visually compelling and user-friendly web interfaces that
+              effectively promote and elevate brand identities
             </p>
           </div>
         </div>
         <div>
           <p class="primary-heading margin-b5 margin-t5">Projects</p>
         </div>
-        <div class="project">
+        <div class="project" id="projects">
           <div class="project-grid">
             <img
               class="lazyload"
-              data-src="./public/project_img/pixelGoat.png"
+              src="./src/public/project_img/pixelGoat.png"
               alt=""
             />
             <div class="project-item-overlay">
@@ -152,7 +159,7 @@
           <div class="project-grid">
             <img
               class="lazyload"
-              data-src="./public/project_img/translater.png"
+              src="./src/public/project_img/translater.png"
               alt=""
             />
             <div class="project-item-overlay">
@@ -169,7 +176,7 @@
           <div class="project-grid">
             <img
               class="lazyload"
-              data-src="./public/project_img/omnifood.png"
+              src="./src/public/project_img/omnifood.png"
               alt=""
             />
             <div class="project-item-overlay">
@@ -187,7 +194,7 @@
           <div class="project-grid">
             <img
               class="lazyload"
-              data-src="./public/project_img/weather.png"
+              src="./src/public/project_img/weather.png"
               alt=""
             />
             <div class="project-item-overlay">
@@ -203,7 +210,7 @@
           <div class="project-grid">
             <img
               class="lazyload"
-              data-src="./public/project_img/wallClock.png"
+              src="./src/public/project_img/wallClock.png"
               alt=""
             />
             <div class="project-item-overlay">
@@ -219,7 +226,7 @@
           <div class="project-grid">
             <img
               class="lazyload"
-              data-src="./public/project_img/Totodolist.png"
+              src="./src/public/project_img/Totodolist.png"
               alt=""
             />
             <div class="project-item-overlay">
@@ -239,50 +246,66 @@
         <div class="experience-grid">
           <p class="tertary-paragraph exp-year">2024</p>
           <div class="exp-circle"></div>
-          <p class="tertary-paragraph">
-            2015 - 2017 Turpis metus sit diam purus leo in varius ac quam. Nunc
-            amet tristique volutpat adipiscing vulputate phasellus. Eget enim
-            aliquam euismod mauris in vitae viverra blandit lectus diam feugiat.
-            Nunc amet tristique volutpat adipiscing vulputate phasellus. Eget
-            enim aliquam.
-          </p>
+
+          <div>
+            <p class="secondary-paragraph">2024-June (EazyBytes)</p>
+            <p class="tertary-paragraph">
+              During my tenure as a remote frontend developer intern at
+              EazyBytes, I actively contributed to the development of
+              user-centric web applications, collaborating closely with
+              cross-functional teams to implement cutting-edge design solutions.
+              Engaging in real-world projects, I honed my skills in HTML, CSS,
+              and JavaScript while gaining invaluable insights into industry
+              best practices. My experience at EazyBytes not only deepened my
+              understanding of frontend development but also fostered a passion
+              for creating seamless digital experiences that resonate with
+              users.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="cover-section section">
+      <div class="cover-section section" id="letter">
         <div>
           <p class="primary-heading margin-b5">Cover letter</p>
           <p class="secondary-paragraph margin-b2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            tristique placerat in massa consectetur quisque nunc fames.
+            I am writing to express my interest in the frontend developer
+            position.
           </p>
           <p class="tertary-paragraph margin-b2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            tristique placerat in massa consectetur quisque. Nunc ac fames
-            lectus in libero aliquet.
+            With a solid background in frontend development and a passion for
+            crafting engaging user experiences, I am excited about the
+            opportunity to contribute to your team and help drive innovative
+            digital solutions.
           </p>
           <p class="tertary-paragraph margin-b5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            tristique placerat in massa consectetur quisque. Nunc ac fames
-            lectus in libero aliquet. Faucibus sed tristique fames sed aliquet
-            ultricies eget viverra arcu. Vitae faucibus diam consequat maecenas.
-            Turpis metus sit diam purus leo in varius ac quam. Nunc amet
-            tristique volutpat adipiscing vulputate phasellus. Volutpat faucibus
-            praesent ac lobortis aliquam dolor. Eget enim aliquam euismod mauris
-            in vitae viverra blandit lectus. Diam feugiat mattis metus,
-            parturient ipsum id nibh tortor tincidunt. Quam facilisi nunc
-            faucibus at porttitor.
+            Throughout my career, I have gained extensive experience in HTML,
+            CSS, and JavaScript, allowing me to create visually stunning and
+            highly functional websites and web applications. I am intermediate
+            in modern frontend frameworks such as React.js, and I am constantly
+            eager to learn and adapt to new technologies and trends in the
+            field. One of my key strengths is my ability to collaborate
+            effectively with cross-functional teams to translate design concepts
+            into interactive and intuitive user interfaces. I thrive in dynamic
+            environments where creativity and innovation are encouraged, and I
+            am dedicated to delivering high-quality work that exceeds
+            expectations. Enclosed is my resume, which provides additional
+            details about my professional background and accomplishments. I
+            would welcome the opportunity to further discuss how my experience
+            and qualifications align with the needs of your team. Thank you for
+            considering my application. I look forward to the possibility of
+            working together.
           </p>
 
           <div class="signature-img">
             <img
               class="lazyload"
-              data-src="./public/signature/Screenshot 2024-06-06 174511.png"
+              src="./src/public/signature/Screenshot 2024-06-06 174511.png"
               alt=""
             />
           </div>
         </div>
       </div>
-      <div class="skill-section section">
+      <div class="skill-section section" id="skills">
         <div>
           <p class="primary-heading margin-b5">Skills</p>
           <div class="skill-item">
@@ -354,17 +377,18 @@
           </div>
         </div>
       </div>
-      <div class="form-section section">
+      <div class="form-section section" id="contact">
         <div>
           <p class="primary-heading margin-b5">Get In Touch</p>
           <p class="secondary-paragraph margin-b2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            tristique placerat in massa consectetur quisque nunc fames.
+            Ready to bring your project to life? I'd love to hear from you!
           </p>
           <p class="tertary-paragraph margin-b2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            tristique placerat in massa consectetur quisque. Nunc ac fames
-            lectus in libero aliquet.
+            Whether you have a question, want to discuss a potential
+            collaboration, or just fancy a chat about all things frontend, feel
+            free to reach out. Drop me a message using the form below, or
+            connect with me on LinkedIn or Twitter. Let's create something
+            amazing together!
           </p>
           <div class="address-container">
             <address>
@@ -420,6 +444,5 @@
         </div>
       </div>
     </main>
-    <script type="module" defer src="./src/script.js"></script>
   </body>
 </html>
